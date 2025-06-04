@@ -76,7 +76,7 @@ class _ProfilePageState extends State<ProfilePage> {
   void _loadCachedUserData(SharedPreferences prefs) {
     if (mounted) {
       setState(() {
-        name = prefs.getString('user_name') ?? 'Nama';
+        name = prefs.getString('user_name') ?? 'Nama Akun';
         email = prefs.getString('user_email') ?? 'Email tidak tersedia';
         gender = prefs.getString('user_gender') ?? 'Tidak diketahui';
         usia = prefs.getInt('user_age') ?? 0;
